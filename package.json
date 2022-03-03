@@ -1,0 +1,16 @@
+{
+  "name": "yamadashy.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yamadashy/yamadashy.github.io.git",
+  "author": "Kazuki Yamada <koukun0120@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "site:build": "eleventy",
+    "site:serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {}
+}

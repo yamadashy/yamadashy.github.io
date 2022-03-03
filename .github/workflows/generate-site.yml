@@ -1,0 +1,40 @@
+name: Generate site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-site:
+    name: Generate Site
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.17.4
+          cache: yarn
+
+      - name: Install node packages
+        run: yarn install
+
+      - name: Generate site
+        run: yarn site:build
+
+      - name: Push to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # NOTE: 変更履歴が必要な場合は false に変更
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

@@ -17,6 +17,8 @@ const minifyHtmlTransform = (content, outputPath) => {
 }
 
 module.exports = function(eleventyConfig) {
+   // static assets
+   eleventyConfig.addPassthroughCopy('src/images');
 
    // minify
    eleventyConfig.addTransform('minify html', minifyHtmlTransform);

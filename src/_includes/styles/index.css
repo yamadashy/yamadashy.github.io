@@ -1,9 +1,10 @@
 h2 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #aaa;
+    padding: 0.2em;
 }
 h3 {
     border-left: 3px solid #ddd;
-    padding-left: 0.3em;
+    padding: 0.1em 0.3em;
 }
 
 .ui-github-link img {

@@ -7,6 +7,13 @@ h3 {
     padding: 0.1em 0.3em;
 }
 
+table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+table tbody tr:hover {
+    background-color: var(--background);
+}
+
 .ui-github-link img {
     height: 18px;
     width: auto;

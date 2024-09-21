@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-img": "^1.1.0",
+    "@11ty/eleventy-img": "^4.0.2",
     "@types/html-minifier-terser": "^6.1.0",
     "html-minifier-terser": "^7.0.0-alpha.1",
     "typesync": "^0.8.0"

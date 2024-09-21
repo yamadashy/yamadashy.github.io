@@ -6,9 +6,8 @@
   "author": "Kazuki Yamada <koukun0120@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "site:build": "eleventy",
-    "site:serve": "eleventy --serve",
-    "preinstall": "typesync || :"
+    "site-build": "eleventy",
+    "site-serve": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",

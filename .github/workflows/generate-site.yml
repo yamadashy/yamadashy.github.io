@@ -13,21 +13,21 @@ jobs:
 
     steps:
       - name: Git checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: main
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 14.17.4
-          cache: yarn
+          node-version-file: .tool-versions
+          cache: npm
 
       - name: Install node packages
-        run: yarn install
+        run: npm install
 
       - name: Generate site
-        run: yarn site:build
+        run: npm run site:build
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

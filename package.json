@@ -10,7 +10,7 @@
     "site-serve": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^1.1.0",
     "@types/html-minifier-terser": "^6.1.0",
     "html-minifier-terser": "^7.0.0-alpha.1",

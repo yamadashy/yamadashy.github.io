@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Generate site
-        run: npm run site:build
+        run: npm run site-build
 
       - name: Push to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

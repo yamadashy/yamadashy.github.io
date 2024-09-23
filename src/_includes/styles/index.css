@@ -29,6 +29,6 @@ table tbody tr:hover {
 }
 
 .ui-shield-link img {
-    height: 22px;
+    height: auto;
     width: auto;
 }

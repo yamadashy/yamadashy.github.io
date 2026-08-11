@@ -1,13 +1,10 @@
 # [yamadashy.github.io](https://yamadashy.github.io/)
 
-## 開発
-サイトの生成は [Eleventy](https://www.11ty.dev/) を使用
+This site has moved to [yamadashy.dev](https://yamadashy.dev/).
 
-### 開発用コマンド
-```bash
-$ # フィードを取得して作成
-$ yarn feed:generate
+The repository is kept only to serve a redirect from the old URL, so incoming
+links from articles and search results keep working. GitHub Pages is published
+from `main` at the repository root; `index.html` and `404.html` redirect every
+path to <https://yamadashy.dev/>.
 
-$ # localhost:8080 で確認
-$ yarn site:serve
-```
+The old Eleventy site remains in the git history.
